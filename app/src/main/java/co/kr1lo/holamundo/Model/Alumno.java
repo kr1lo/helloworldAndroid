@@ -1,4 +1,4 @@
-package co.kr1lo.holamundo;
+package co.kr1lo.holamundo.Model;
 
 import java.util.Date;
 
