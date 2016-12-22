@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -38,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void enviarDatos(View view) {
+
+        EditText edtNombre = (EditText) findViewById(R.id.edit_nombre);
+
+        String nombre = edtNombre.getText().toString();
+
+        Toast.makeText(getBaseContext(), "Felicidades tu nombre es " + nombre,Toast.LENGTH_LONG).show();
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
